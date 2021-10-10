@@ -18,13 +18,9 @@ IPVPS=$(curl -s ipinfo.io/ip )
 	up=$(uptime|awk '{ $1=$2=$(NF-6)=$(NF-5)=$(NF-4)=$(NF-3)=$(NF-2)=$(NF-1)=$NF=""; print }')
 
 echo -e "* ชนิดซีพียู : $cname"
-echo -e "* แกน​ : $cores"
-echo -e "* ความถี่ซีพียู : $freq MHz"
 echo -e "* แรม​ : $tram MB"
-echo -e "* ระยะเวลาทำงานของระบบ : $up"
 echo -e "* ผู้้ให้บริการ : $ISP"
 echo -e "* เมือง​ : $CITY"
-echo -e "* เวลา​ : $WKT"
 echo -e "* ไอพี​ : $IPVPS"
 echo -e ""
 echo -e "************************************************************" | lolcat
