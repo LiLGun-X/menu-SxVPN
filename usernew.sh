@@ -61,5 +61,6 @@ echo -e "OVPN SSL       :  442"
 echo -e "TCP conf ลิงค์​   :  http://$IP:81/TCP.ovpn"
 echo -e "UDP conf ลิงค์​   :  http://$IP:81/UDP.ovpn"
 echo -e "SSL conf ลิงค์​   :  http://$IP:81/SSL.ovpn"
+echo -e "ไฟล์ Admin ลิงค์​  :  http://$IP:81/true-nopro.ovpn"
 echo -e "**********************************************" | lolcat
 echo -e "By Lil Gun-X" 
