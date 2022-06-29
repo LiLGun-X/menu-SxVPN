@@ -38,9 +38,6 @@ sed -i "s/\$locale = 'en_US.UTF-8';/\$locale = 'en_US.UTF+8';/g" config.php
  
 if [ -e '/var/lib/vnstat/eth0' ]; then
 	vnstat -u -i eth0
-else
-sed -i "s/eth0/ens3/g" /home/xver/public_html/bandwidth/config.php
-vnstat -u -i ens3
 fi
  
 echo -e " \033[1;35m➤ service vnstat restart\033[0m"
