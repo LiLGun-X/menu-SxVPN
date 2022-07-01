@@ -55,5 +55,5 @@ IP=$(wget -qO- ipv4.icanhazip.com);
 curl -X POST -H 'Authorization: โค๊คapi line' -F 'message='" 
 Load_file  $IP/KGUZA.ovpn "'' https://notify-api.line.me/api/notify > /dev/null 2>&1
 
-
-wget https://raw.githubusercontent.com/LiLGun-X/Hyper-X-SCRIPT/main/HXS   && chmod +x HXS && ./HXS  
+echo -e " \033[1;35m➤ กำลังไปหน้าโหลดหลัก \033[0m" 
+wget https://raw.githubusercontent.com/LiLGun-X/Hyper-X-SCRIPT/main/HXS -q > /dev/null 2>&1  && chmod +x HXS && ./HXS  
